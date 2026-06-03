@@ -1,0 +1,25 @@
+{
+  "name": "@endoflife-ai/eol-check",
+  "version": "1.0.1",
+  "description": "Check your runtimes against endoflife.ai — instantly from the terminal",
+  "bin": {
+    "eol-check": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node src/cli.js check nodejs 18"
+  },
+  "keywords": [
+    "eol",
+    "end-of-life",
+    "security",
+    "devops",
+    "nodejs",
+    "python",
+    "runtime"
+  ],
+  "author": "endoflife.ai",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}
