@@ -24,7 +24,7 @@ npx @endoflife-ai/eol-check check nodejs 18
 npx @endoflife-ai/eol-check check python 3.11
 npx @endoflife-ai/eol-check check php 8.1
 
-# List all 455+ tracked products
+# List all 600+ tracked products
 npx @endoflife-ai/eol-check list
 ```
 
@@ -76,21 +76,21 @@ npx @endoflife-ai/eol-check || echo "EOL runtimes found — upgrade before deplo
 
 ## API key
 
-The free tier allows 100 requests/day. For higher limits, set your endoflife.ai Pro API key:
+From November 16, 2026 the endoflife.ai API needs a key for every lookup (until then it answers without one at 50 requests a day). A free key gives 150 requests a day and does not expire; paid keys raise the limit. Set it as `EOL_API_KEY`:
 
 ```bash
 EOL_API_KEY=your_key npx @endoflife-ai/eol-check
 ```
 
-[Get a Pro API key →](https://endoflife.ai/api)
+[Get a free API key →](https://endoflife.ai/api#free-key)
 
 ## CI integration
 
-For CI pipelines, use the [GitHub Action](https://github.com/marketplace/actions/eol-runtime-check) instead — it integrates directly with GitHub's build system and posts PR annotations.
+For CI pipelines, use the [EOL Check GitHub Action](https://github.com/marketplace/actions/eol-check-end-of-life-software-gate) instead — it posts file-anchored annotations, reads SBOMs, and works without a key.
 
 ## Data
 
-EOL dates and risk scores sourced from [endoflife.ai](https://endoflife.ai) — free lifecycle intelligence for 455+ products, updated daily.
+EOL dates and risk scores sourced from [endoflife.ai](https://endoflife.ai) — lifecycle data for 600+ products, rebuilt at least daily.
 
 ## License
 

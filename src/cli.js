@@ -15,7 +15,7 @@ const fs   = require('fs');
 const path = require('path');
 
 const API = 'https://api.endoflife.ai/v1';
-const VERSION = '1.0.0';
+const VERSION = '1.0.2';
 
 // ─── Colours ─────────────────────────────────────────────────────────────────
 
@@ -42,8 +42,13 @@ function fetchJson(url, apiKey) {
     if (apiKey) headers['X-API-Key'] = apiKey;
     https.get(url, { headers }, res => {
       if (res.statusCode === 404) { resolve(null); return; }
+      // From 2026-11-16 the API refuses requests without a key (HTTP 401).
+      if (res.statusCode === 401) {
+        reject(new Error('The endoflife.ai API needs a key from November 16, 2026. Get a free key (150 requests a day, no expiry) at https://endoflife.ai/api#free-key and set it as the EOL_API_KEY environment variable.'));
+        return;
+      }
       if (res.statusCode === 429) {
-        reject(new Error('Rate limit exceeded. Set EOL_API_KEY env var for higher limits.'));
+        reject(new Error('Rate limit exceeded. Set the EOL_API_KEY environment variable to a free key (150 requests a day) from https://endoflife.ai/api#free-key, or a paid key for more.'));
         return;
       }
       if (res.statusCode !== 200) {

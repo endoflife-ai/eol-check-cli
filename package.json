@@ -1,6 +1,6 @@
 {
   "name": "@endoflife-ai/eol-check",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check your runtimes against endoflife.ai — instantly from the terminal",
   "bin": {
     "eol-check": "src/cli.js"
