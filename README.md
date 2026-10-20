@@ -24,7 +24,7 @@ npx @endoflife-ai/eol-check check nodejs 18
 npx @endoflife-ai/eol-check check python 3.11
 npx @endoflife-ai/eol-check check php 8.1
 
-# List all 600+ tracked products
+# List all 700+ tracked products
 npx @endoflife-ai/eol-check list
 ```
 
@@ -90,7 +90,7 @@ For CI pipelines, use the [EOL Check GitHub Action](https://github.com/marketpla
 
 ## Data
 
-EOL dates and risk scores sourced from [endoflife.ai](https://endoflife.ai) — lifecycle data for 600+ products, rebuilt at least daily.
+EOL dates and risk scores sourced from [endoflife.ai](https://endoflife.ai) — lifecycle data for 700+ products, rebuilt at least daily.
 
 ## License
 
