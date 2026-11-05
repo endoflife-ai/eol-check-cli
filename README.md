@@ -86,7 +86,7 @@ EOL_API_KEY=your_key npx @endoflife-ai/eol-check
 
 ## CI integration
 
-For CI pipelines, use the [EOL Check GitHub Action](https://github.com/marketplace/actions/eol-check-end-of-life-software-gate) instead — it posts file-anchored annotations, reads SBOMs, and works without a key.
+For CI pipelines, use the [EOL Check GitHub Action](https://github.com/marketplace/actions/eol-check-end-of-life-software-gate) instead — it posts file-anchored annotations and reads SBOMs (from November 16, 2026 it needs a free API key: https://endoflife.ai/api#free-key).
 
 ## Data
 
