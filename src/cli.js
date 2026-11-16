@@ -4,10 +4,10 @@
  * eol-check — CLI for endoflife.ai
  *
  * Usage:
- *   npx eol-check                    # scan current directory
- *   npx eol-check scan [path]        # scan a directory
- *   npx eol-check check <slug> <ver> # check a specific product
- *   npx eol-check list               # list all tracked products
+ *   npx @endoflife-ai/eol-check                    # scan current directory
+ *   npx @endoflife-ai/eol-check scan [path]        # scan a directory
+ *   npx @endoflife-ai/eol-check check <slug> <ver> # check a specific product
+ *   npx @endoflife-ai/eol-check list               # list all tracked products
  *
  * Every lookup needs an API key in EOL_API_KEY (or ENDOFLIFE_API_KEY).
  * A free key works: https://endoflife.ai/api#free-key
@@ -498,18 +498,18 @@ ${col(c.bold, 'eol-check')} v${VERSION} — powered by endoflife.ai
 
 ${col(c.bold, 'USAGE')}
 
-  ${col(c.cyan, 'npx eol-check')}                     Scan current directory
-  ${col(c.cyan, 'npx eol-check scan [path]')}         Scan a directory
-  ${col(c.cyan, 'npx eol-check check <slug> <ver>')}  Check a specific product version
-  ${col(c.cyan, 'npx eol-check list')}                List all tracked products
+  ${col(c.cyan, 'npx @endoflife-ai/eol-check')}                     Scan current directory
+  ${col(c.cyan, 'npx @endoflife-ai/eol-check scan [path]')}         Scan a directory
+  ${col(c.cyan, 'npx @endoflife-ai/eol-check check <slug> <ver>')}  Check a specific product version
+  ${col(c.cyan, 'npx @endoflife-ai/eol-check list')}                List all tracked products
 
 ${col(c.bold, 'EXAMPLES')}
 
-  npx eol-check
-  npx eol-check scan ./my-project
-  npx eol-check check nodejs 18
-  npx eol-check check python 3.11
-  npx eol-check check php 8.1
+  npx @endoflife-ai/eol-check
+  npx @endoflife-ai/eol-check scan ./my-project
+  npx @endoflife-ai/eol-check check nodejs 18
+  npx @endoflife-ai/eol-check check python 3.11
+  npx @endoflife-ai/eol-check check php 8.1
 
 ${col(c.bold, 'API KEY (required)')}
 
