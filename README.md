@@ -6,7 +6,7 @@
 npx @endoflife-ai/eol-check
 ```
 
-Scans your project for version pins and tells you which runtimes are end-of-life, approaching EOL, or still supported. Powered by [endoflife.ai](https://endoflife.ai).
+Scans your project for version pins and tells you which runtimes are end-of-life, approaching EOL, or still supported. Powered by [endoflife.ai](https://endoflife.ai). Useful? A star helps other teams find it.
 
 **An API key is required.** A free key works. [Get one here](https://endoflife.ai/api#free-key) and set it as `EOL_API_KEY` (see [API key](#api-key)).
 
